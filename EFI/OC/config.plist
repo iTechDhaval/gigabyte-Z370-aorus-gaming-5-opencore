@@ -197,10 +197,19 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
+				<key>device_type</key>
+				<string>Audio Device</string>
 				<key>layout-id</key>
-				<data>AQAAAA==</data>
+				<data>CwAAAA==</data>
+				<key>model</key>
+				<string>Realtek ALC1220</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>shikigva</key>
+				<integer>80</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -210,15 +219,6 @@
 				<string>01000000</string>
 				<key>framebuffer-stolenmem</key>
 				<string>00003001</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>device_type</key>
-				<string>Audio Device</string>
-				<key>layout-id</key>
-				<data>CwAAAA==</data>
-				<key>model</key>
-				<string>Realtek ALC1220</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -852,11 +852,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>CFGLock.efi</string>
+				<string>modGRUBShell.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>Name</key>
-				<string>CFGLock.efi</string>
+				<string>modGRUBShell.efi</string>
 				<key>TextMode</key>
 				<false/>
 				<key>Enabled</key>
@@ -864,25 +864,25 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
-				<string>CFGLock.efi</string>
+				<string>modGRUBShell.efi</string>
 				<key>Auxiliary</key>
 				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>modGRUBShell.efi</string>
+				<string>CFGLock.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>Name</key>
-				<string>modGRUBShell.efi</string>
+				<string>CFGLock.efi</string>
 				<key>TextMode</key>
 				<false/>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
-				<string>modGRUBShell.efi</string>
+				<string>CFGLock.efi</string>
 				<key>Auxiliary</key>
 				<true/>
 			</dict>
