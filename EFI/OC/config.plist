@@ -709,6 +709,8 @@
 			<true/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>-1</integer>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -789,6 +791,8 @@
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
 				<key>TextMode</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -821,26 +825,30 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>AllowToggleSip</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
+				<string>Not signed for security reasons</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Flavour</key>
+				<string>OpenShell:UEFIShell:Shell</string>
+				<key>Name</key>
+				<string>UEFI Shell</string>
+				<key>Path</key>
 				<string>OpenShell.efi</string>
 				<key>RealPath</key>
 				<false/>
-				<key>Name</key>
-				<string>OpenShell.efi</string>
 				<key>TextMode</key>
 				<false/>
-				<key>Enabled</key>
-				<true/>
-				<key>Arguments</key>
-				<string></string>
-				<key>Path</key>
-				<string>OpenShell.efi</string>
-				<key>Auxiliary</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -852,13 +860,15 @@
 				<key>TextMode</key>
 				<false/>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>modGRUBShell.efi</string>
 				<key>Auxiliary</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -877,6 +887,8 @@
 				<string>CFGLock.efi</string>
 				<key>Auxiliary</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -895,6 +907,48 @@
 				<string>VerifyMsrE2.efi</string>
 				<key>Auxiliary</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Memory testing utility</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>MemTest</string>
+				<key>Name</key>
+				<string>memtest86</string>
+				<key>Path</key>
+				<string>memtest86/BOOTX64.efi</string>
+				<key>RealPath</key>
+				<true/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string>Shutdown</string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>Perform shutdown</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>Shutdown</string>
+				<key>Path</key>
+				<string>ResetSystem.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -926,6 +980,8 @@
 				<string>en_CA:29</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -987,8 +1043,6 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
-			<false/>
 			<key>MLB</key>
 			<string>C02004303CDLNV9CB</string>
 			<key>ProcessorType</key>
@@ -1006,6 +1060,8 @@
 			<key>SystemUUID</key>
 			<string>6DC82117-1CAA-4970-9F3F-ACEF6FE8D682</string>
 			<key>MaxBIOSVersion</key>
+			<false/>
+			<key>AdviseFeatures</key>
 			<false/>
 		</dict>
 		<key>UpdateDataHub</key>
@@ -1111,7 +1167,7 @@
 			<key>UgaPassThrough</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1120,8 +1176,6 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
-			<false/>
-			<key>AppleEvent</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
@@ -1150,6 +1204,8 @@
 			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
+			<false/>
+			<key>AppleEg2Info</key>
 			<false/>
 		</dict>
 		<key>Quirks</key>
