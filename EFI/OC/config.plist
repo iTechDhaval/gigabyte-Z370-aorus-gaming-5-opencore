@@ -8,6 +8,14 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>SSDT-PLUG-DRTNIA.aml</string>
+				<key>Path</key>
+				<string>SSDT-PLUG-DRTNIA.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-AWAC.aml</string>
 				<key>Path</key>
 				<string>SSDT-AWAC.aml</string>
@@ -19,14 +27,6 @@
 				<string>SSDT-EC-USBX-DESKTOP.aml</string>
 				<key>Path</key>
 				<string>SSDT-EC-USBX-DESKTOP.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PLUG-DRTNIA.aml</string>
-				<key>Path</key>
-				<string>SSDT-PLUG-DRTNIA.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -176,7 +176,7 @@
 			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
-			<false/>
+			<true/>
 			<key>ProtectUefiServices</key>
 			<true/>
 			<key>ProvideCustomSlide</key>
@@ -210,6 +210,15 @@
 				<string>01000000</string>
 				<key>framebuffer-stolenmem</key>
 				<string>00003001</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Audio Device</string>
+				<key>layout-id</key>
+				<data>CwAAAA==</data>
+				<key>model</key>
+				<string>Realtek ALC1220</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -415,7 +424,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBMap.kext</string>
+				<string>XHCI-300-series-injector.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -433,7 +442,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>XHCI-300-series-injector.kext</string>
+				<string>USBPorts.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -685,7 +694,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<true/>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -709,7 +718,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -718,7 +727,7 @@
 			<key>KernelArch</key>
 			<string>x86_64</string>
 			<key>KernelCache</key>
-			<string>Auto</string>
+			<string>Cacheless</string>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -753,7 +762,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<false/>
+			<true/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
@@ -761,13 +770,13 @@
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
-			<integer>2147483650</integer>
+			<integer>2147483714</integer>
 			<key>SerialInit</key>
 			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>83</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -864,7 +873,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 alcid=1</string>
+				<string>keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1098,7 +1107,7 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
+			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
