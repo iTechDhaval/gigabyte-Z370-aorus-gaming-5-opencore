@@ -1026,8 +1026,6 @@
                     <string>boot-args</string>
                 </array>
             </dict>
-            <key>LegacyEnable</key>
-            <false/>
             <key>LegacyOverwrite</key>
             <false/>
             <key>LegacySchema</key>
@@ -1177,6 +1175,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
                 </dict>
@@ -1187,6 +1187,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenCanopy.efi</string>
                 </dict>
@@ -1196,6 +1198,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>AudioDxe.efi</string>
@@ -1207,6 +1211,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <false/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenPartitionDxe.efi</string>
                 </dict>
@@ -1216,6 +1222,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>OpenUsbKbDxe.efi</string>
@@ -1227,6 +1235,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <false/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>UsbMouseDxe.efi</string>
                 </dict>
@@ -1236,6 +1246,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>Ps2KeyboardDxe.efi</string>
@@ -1247,6 +1259,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <false/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>Ps2MouseDxe.efi</string>
                 </dict>
@@ -1256,6 +1270,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>HiiDatabase.efi</string>
@@ -1267,6 +1283,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <false/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>NvmExpressDxe.efi</string>
                 </dict>
@@ -1276,6 +1294,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>XhciDxe.efi</string>
@@ -1287,6 +1307,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <false/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>CrScreenshotDxe.efi</string>
                 </dict>
@@ -1296,6 +1318,8 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
                     <string>OpenLinuxBoot.efi</string>
@@ -1307,6 +1331,8 @@
                     <string>BiosVideo.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>BiosVideo.efi</string>
                 </dict>
@@ -1317,6 +1343,8 @@
                     <string>OpenHfsPlus.efi</string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenHfsPlus.efi</string>
                 </dict>
