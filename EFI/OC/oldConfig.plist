@@ -855,6 +855,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -874,6 +876,8 @@
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
+				<false/>
+				<key>FullNvramAccess</key>
 				<false/>
 			</dict>
 			<dict>
@@ -895,6 +899,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -914,6 +920,8 @@
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
+				<false/>
+				<key>FullNvramAccess</key>
 				<false/>
 			</dict>
 			<dict>
@@ -935,6 +943,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -955,6 +965,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -974,6 +986,8 @@
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
+				<false/>
+				<key>FullNvramAccess</key>
 				<false/>
 			</dict>
 		</array>
@@ -1175,10 +1189,10 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>OpenRuntime.efi</string>
 				<key>LoadEarly</key>
 				<false/>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1187,10 +1201,10 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>OpenCanopy.efi</string>
 				<key>LoadEarly</key>
 				<false/>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1198,11 +1212,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>AudioDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1210,11 +1224,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>OpenPartitionDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1222,11 +1236,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>OpenUsbKbDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1234,11 +1248,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>UsbMouseDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1246,11 +1260,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>Ps2KeyboardDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1258,11 +1272,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>Ps2MouseDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1270,11 +1284,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>HiiDatabase.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1282,11 +1296,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>NvmExpressDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1294,11 +1308,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>XhciDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1306,11 +1320,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>CrScreenshotDxe.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1318,11 +1332,11 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>OpenLinuxBoot.efi</string>
-				<key>LoadEarly</key>
-				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1331,10 +1345,10 @@
 				<string>BiosVideo.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>BiosVideo.efi</string>
 				<key>LoadEarly</key>
 				<false/>
+				<key>Path</key>
+				<string>BiosVideo.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1343,10 +1357,10 @@
 				<string>OpenHfsPlus.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>OpenHfsPlus.efi</string>
 				<key>LoadEarly</key>
 				<false/>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
