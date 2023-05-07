@@ -1422,6 +1422,8 @@
 			<integer>0</integer>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>GopBurstMode</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
