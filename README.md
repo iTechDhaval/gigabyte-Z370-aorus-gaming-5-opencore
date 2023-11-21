@@ -20,6 +20,7 @@
 - [x] Sleep & Deep Sleep (Out of the box, including FANs turned off)
 - [x] Shutdown (motherboard leds turn off as well)
 - [x] Fenvi T919 Bluetooth and Wifi (Out of the box - need to activate on board USB port HS11 and disable HS02)
+  - [x][ Macos Sonoma requires some extra kexts to load](#Fix-Broadcom-WiFi-on-macOS-Sonoma-and-Later).
 - [x] Ethernet (Needs kext)
 - [x] Wifi OnBoard Adapter (Needs kexts: AirportItlwm.kext)
 - [x] Bluetooth OnBoard Adapter (Need kext)
@@ -134,3 +135,8 @@ setup_var 0x5A4 0x00
 1. Reset BIOS Settings
 2. Disable CFG Lock
 3. Reboot
+
+#### Fix Broadcom WiFi on macOS Sonoma and Later
+
+* Follow guide from [EliteMacx86](https://elitemacx86.com/threads/how-to-fix-broadcom-wifi-on-macos-sonoma-and-later.1415/).
+* [Video format of the guide](https://www.youtube.com/watch?v=gHs2CFox6gc)
