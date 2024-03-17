@@ -1115,7 +1115,7 @@
                     <key>SystemAudioVolumeDB</key>
                     <data>4g==</data>
                     <key>boot-args</key>
-                    <string>keepsyms=1 debug=0x100</string>
+                    <string>amfi=0x80 keepsyms=1 debug=0x100</string>
                     <key>csr-active-config</key>
                     <data>AwgAAA==</data>
                     <key>prev-lang:kbd</key>
